@@ -9,4 +9,6 @@ async function makeRequest(url) {
     }
 }
 
-makeRequest("https://dog-api.kinduff.com/api/facts?number=5");
+let result = await makeRequest("https://dog-api.kinduff.com/api/facts?number=5");
+
+console.log(result);
